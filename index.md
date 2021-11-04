@@ -23,6 +23,6 @@ December 7th (Final Project Due)- Completed Project
 Each member’s individual responsibilities will be decided in weekly scrum meetings.
 
 ## References
-- [Link](https://en.wikipedia.org/wiki/List_of_horror_video_games)
-- [Link](https://dl.acm.org/doi/10.1145/2095667.2095672) (PDF button on side of page presents the full article)
-- [Link](https://midnightmusic.com.au/2016/06/the-guide-to-composing-music-for-video-games/)
+- [List of Horror Video Games](https://en.wikipedia.org/wiki/List_of_horror_video_games)
+- [Considerations for designing a virtual acoustic ecology of fear](https://dl.acm.org/doi/10.1145/2095667.2095672) (PDF button on side of page presents the full article)
+- [The Guide to Composing Video Games](https://midnightmusic.com.au/2016/06/the-guide-to-composing-music-for-video-games/)
