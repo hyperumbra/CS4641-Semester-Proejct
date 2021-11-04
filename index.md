@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# CS 4641 Semester Project
+_Created by Joshua Donegal & Brian Compau(?)_
 
-You can use the [editor on GitHub](https://github.com/hyperumbra/CS4641-Semester-Proejct/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Introduction/Background
+The effect of horror within the game genre is largely correlated with the atmosphere of the game’s environment. A major component of this atmosphere is the musical score/soundtrack/composition. Being able to identify which instruments and their frequency in both successful and unsuccessful horror games is vital to the evolution of the genre as composers look to create increasingly complex original soundtracks and create more successful horror games.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Problem Definition
+Identify the instruments that comprise the composition of original soundtracks for horror games prior to the year 2000 and analyze the composition in terms of sales and scores on popular gaming sites, such as Steam and MetaCritic.
 
-### Markdown
+## Methods
+We will be using supervised learning to identify the frequency of instrument use in successful games. We will be analysing video game release data, success data, and the original soundtracks as features in the matrix. A video game’s success is determined by total sales, rate of sales, and a rating derived from user ratings and journalism reviews across many sources (e.g. Steam). Furthermore, we will be utilizing several different models, and choosing the best model in accordance to their results and accuracy.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Potential Results & Discussion
+Our first intuition is that the most common instruments may be the waterphone, instruments synonymous with the term “horror” due to their eerie and sharp tone with a wide range of pitches, the organ, and synthesizers. 
 
-```markdown
-Syntax highlighted code block
+## Timeline
+October 18th- Have complete dataset(s)
+November 1st- First checkpoint for team’s coding process (internal)
+November 16th (Midpoint Checkpoint)- First Prototype done (ok if there are some bugs in it)
+December 1st- Minimum Viable Product (the next week will be for checking the project for rare/well-hidden bugs and checking it against project requirements)
+December 7th (Final Project Due)- Completed Project
 
-# Header 1
-## Header 2
-### Header 3
+Each member’s individual responsibilities will be decided in weekly scrum meetings.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hyperumbra/CS4641-Semester-Proejct/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## References
+- [Link](https://en.wikipedia.org/wiki/List_of_horror_video_games)
+- [Link](https://dl.acm.org/doi/10.1145/2095667.2095672) (PDF button on side of page presents the full article)
+- [Link](https://midnightmusic.com.au/2016/06/the-guide-to-composing-music-for-video-games/)
