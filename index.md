@@ -1,28 +1,22 @@
 # CS 4641 Semester Project
-_Created by Joshua Donegal & Brian Compau(?)_
+_Created by Joshua Donegal_
 
 ## Introduction/Background
-The effect of horror within the game genre is largely correlated with the atmosphere of the game’s environment. A major component of this atmosphere is the musical score/soundtrack/composition. Being able to identify which instruments and their frequency in both successful and unsuccessful horror games is vital to the evolution of the genre as composers look to create increasingly complex original soundtracks and create more successful horror games.
+For many, cars are a tool of transportation, objects meant to decrease the time a person uses to go from point A to point B. However, for some, cars are a means of representation of lifestyle and can serve as an extension of the personality and living conditions. Some may attempt to stretch themselves financially to afford more expensive cars, but I believe these scenarios are few and between and are still representative of the individual. The ability to classify a car using only an image is a problem that lies under computer vision: a specialized field of machine learning focused on the application of identification and classification techniques on images and videos.
 
 ## Problem Definition
-Identify the instruments that comprise the composition of original soundtracks for horror games prior to the year 2000 and analyze the composition in terms of sales and scores on popular gaming sites, such as Steam and MetaCritic.
+Classification of images that contains a vehicle parked at Stanford by make, model, and year. This can be achieved via removing the noise and background data from the composition of the image and isolating the car’s model within a 3-dimensional plane, allowing for classification of the vehicle from multiple different angles.
+
+## Data Collection
+Data was collected from Kaggle, an online community of data scientists and machine learning practitioners. The dataset was already pre-processed into a training and test dataset, each containing just over 8,000 images for classification. After importing the dataset, the only task left at hand was to ensure proper image naming for training the model.
 
 ## Methods
-We will be using supervised learning to identify the frequency of instrument use in successful games. We will be analysing video game release data, success data, and the original soundtracks as features in the matrix. A video game’s success is determined by total sales, rate of sales, and a rating derived from user ratings and journalism reviews across many sources (e.g. Steam). Furthermore, we will be utilizing several different models, and choosing the best model in accordance to their results and accuracy.
+I am currently utilizing a convolutional neural network (CNN), a supervised methodology of machine learning, to do image classification of vehicle make, model, and year. Instead of attempting to utilize several different models for classification, such as a decision tree or random forest for image classification, I have decided to focus on working with a CNN due to its powerful classification abilities and wide application of usage. This is a problem that’s commonly found within computer vision that is able to utilize supervised machine learning to aggregate the training and testing data to increase accuracy.
 
 ## Potential Results & Discussion
-Our first intuition is that the most common instruments may be the waterphone, instruments synonymous with the term “horror” due to their eerie and sharp tone with a wide range of pitches, the organ, and synthesizers. 
 
-## Timeline
-October 18th- Have complete dataset(s)
-November 1st- First checkpoint for team’s coding process (internal)
-November 16th (Midpoint Checkpoint)- First Prototype done (ok if there are some bugs in it)
-December 1st- Minimum Viable Product (the next week will be for checking the project for rare/well-hidden bugs and checking it against project requirements)
-December 7th (Final Project Due)- Completed Project
-
-Each member’s individual responsibilities will be decided in weekly scrum meetings.
 
 ## References
-- [List of Horror Video Games](https://en.wikipedia.org/wiki/List_of_horror_video_games)
-- [Considerations for designing a virtual acoustic ecology of fear](https://dl.acm.org/doi/10.1145/2095667.2095672) (PDF button on side of page presents the full article)
-- [The Guide to Composing Video Games](https://midnightmusic.com.au/2016/06/the-guide-to-composing-music-for-video-games/)
+- [Kaggle]https://www.kaggle.com/getting-started/44916
+- (3D Object Representations for Fine-Grained Categorization Jonathan Krause, Michael Stark, Jia Deng, Li Fei-Fei 4th IEEE Workshop on 3D Representation and Recognition, at ICCV 2013 (3dRR-13). Sydney, Australia. Dec. 8, 2013.)
+- [What is Copmuter Vision?]https://machinelearningmastery.com/what-is-computer-vision/ 
