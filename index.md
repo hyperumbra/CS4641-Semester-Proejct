@@ -13,8 +13,8 @@ Data was collected from Kaggle, an online community of data scientists and machi
 ## Methods
 I am currently utilizing a convolutional neural network (CNN), a supervised methodology of machine learning, to do image classification of vehicle make, model, and year. Instead of attempting to utilize several different models for classification, such as a decision tree or random forest for image classification, I have decided to focus on working with a CNN due to its powerful classification abilities and wide application of usage. This is a problem that’s commonly found within computer vision that is able to utilize supervised machine learning to aggregate the training and testing data to increase accuracy.
 
-## Potential Results & Discussion
-
+## Results & Discussion
+Admittedly, I do not have results from trraining my CNN yet. This is due to my model not having been trained yet as I am still debugging parrts of the codebase to enable training. However, I do not believe training will take a substantial amount of time due to Pytorch's capabilities in utilizing CUDA cores for training paired with a NVIDIA GTX 1080Ti. With that being said, I do believe that the implementation of ResNet18 that frerezes all but the last fully connected layer will yield a fairly high accuracy. Additionally, I am contemplating creating my own custom CNN via Pytorch, but I do need to draw a conclusion on how many layers and feautres will be necessary to create a well-trained model that does not overfit to the training data.
 
 ## References
 - [Kaggle]https://www.kaggle.com/getting-started/44916
