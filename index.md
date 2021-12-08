@@ -41,7 +41,7 @@ Depicted below are tables that detail the training of the network. With the init
 
 *Training with initial learning rate and weight decay (lr=3.22e-2, wd=1e-7). Final accuracy evaluates to 80.41%.*
 
-*Note:* The use of a pretrained model provides significant advantages over architecting and training a model from scratch. The first main advantage lies in the optimization of training time due to ongoing development. Another significant advantage is the ability to readily take advantage of the processing power of graphical processing units (GPUs), specialized hardware designed for processing images and videos and is much more efficient than a traditional computer processor.
+*Author's Note:* The use of a pretrained model provides significant advantages over architecting and training a model from scratch. The first main advantage lies in the optimization of training time due to ongoing development. Another significant advantage is the ability to readily take advantage of the processing power of graphical processing units (GPUs), specialized hardware designed for processing images and videos and is much more efficient than a traditional computer processor.
 
 ## References
 - [Kaggle](https://www.kaggle.com/getting-started/44916)
