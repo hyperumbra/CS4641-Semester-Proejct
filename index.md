@@ -1,11 +1,11 @@
-# CS 4641 Semester Project: Standford Car Classifier
+# Standford Car Classifier
 _Created by Joshua Donegal_
 
 ## Introduction/Background
 For many, cars are a tool of transportation, objects meant to decrease the time a person uses to go from point A to point B. However, for some, cars are a means of representation of lifestyle and can serve as an extension of the personality and living conditions. Some may attempt to stretch themselves financially to afford more expensive cars, but I believe these scenarios are few and between and are still representative of the individual. The ability to classify a car using only an image is a problem that lies under computer vision: a specialized field of machine learning focused on the application of identification and classification techniques on images and videos.
 
 ## Problem Definition
-Classification of images that contains a vehicle parked at Stanford by make, model, and year. This can be achieved via removing the noise and background data from the composition of the image and isolating the car’s model within a 3-dimensional plane, allowing for classification of the vehicle from multiple different angles.
+The Stanford Car Classifier categorizes images that contains a vehicle parked at Stanford by make, model, and year. This can be achieved via removing the noise and background data from the composition of the image and isolating the car’s model within a 3-dimensional plane, allowing for classification of the vehicle from multiple different angles.
 
 ## Data Collection
 Data was collected from Kaggle, an online community of data scientists and machine learning practitioners. The dataset was already pre-processed into a training and test dataset, each containing just over 8,000 images for classification. After importing the dataset, the only task left at hand was to ensure proper image naming for training the model.
@@ -31,7 +31,7 @@ The architecture of the Neural Network follows the architecture of a pretrained 
 
 
 ## Results & Discussion
-Depicted below are tables that detail the training of the network. With the initial learning rate, weight decay, and epochs, the model was able to train to just under 70% accuracy. While this is a good benchmark to begin with, the model has potential for increases in accuracy when balancing learning rates, weight decays, and epochs. To increase the accuracy, to circumvent the increase in epochs for training that would result in longer training times, I decided to tune the learning rate and weight decay of the model. When adjusting the learning rate, I increased the learning rate slightly as a means to increase training accuracy at the risk of overfitting the data. On the other hand, adjusting weight decay was much trickier as the pretrained model employs the use of frozen layers, a technique in which the model will prevent a layer's weights from being modified at the benfit of decreasing computation time via reduced back propoagations.
+Depicted below are tables that detail the training of the network. With the initial learning rate, weight decay, and epochs, the model was able to train to just under 70% accuracy. While this is a good benchmark to begin with, the model has potential for increases in accuracy when balancing learning rates, weight decays, and epochs.
 
 ![Table of initial training](/img/training_initial.png)
 
@@ -41,7 +41,9 @@ Depicted below are tables that detail the training of the network. With the init
 
 *Training with initial learning rate and weight decay (lr=3.22e-2, wd=1e-7). Final accuracy evaluates to 80.41%.*
 
-*Author's Note:* The use of a pretrained model provides significant advantages over architecting and training a model from scratch. The first main advantage lies in the optimization of training time due to ongoing development. Another significant advantage is the ability to readily take advantage of the processing power of graphical processing units (GPUs), specialized hardware designed for processing images and videos and is much more efficient than a traditional computer processor.
+As depicted above, the accuracy of the model after tuning the learning rate and weight decay rises to just above 80% despite taking the same number of epochs (30) to train as the initial model. To increase the accuracy, to circumvent the increase in epochs for training that would result in longer training times, I decided to tune the learning rate and weight decay of the model. When adjusting the learning rate, I increased the learning rate slightly as a means to increase training accuracy at the risk of overfitting the data. On the other hand, adjusting weight decay was much trickier as the pretrained model employs the use of frozen layers, a technique in which the model will prevent a layer's weights from being modified at the benfit of decreasing computation time via reduced back propoagations.
+
+The use of a pretrained model provides significant advantages over architecting and training a model from scratch. The first main advantage lies in the optimization of training time due to ongoing development. Another significant advantage is the ability to readily take advantage of the processing power of graphical processing units (GPUs), specialized hardware designed for processing images and videos and is much more efficient than a traditional computer processor.
 
 ## References
 - [Kaggle](https://www.kaggle.com/getting-started/44916)
