@@ -10,6 +10,14 @@ Classification of images that contains a vehicle parked at Stanford by make, mod
 ## Data Collection
 Data was collected from Kaggle, an online community of data scientists and machine learning practitioners. The dataset was already pre-processed into a training and test dataset, each containing just over 8,000 images for classification. After importing the dataset, the only task left at hand was to ensure proper image naming for training the model.
 
+[visualization of classes]
+
+[visualization of class distribution]
+
+[Another cool visualization]
+
+[cool 3d visualization]
+
 ## Methods
 I am currently utilizing a convolutional neural network (CNN), a supervised methodology of machine learning, to do image classification of vehicle make, model, and year. Instead of attempting to utilize several different models for classification, such as a decision tree or random forest for image classification, I have decided to focus on working with a CNN due to its powerful classification abilities and wide application of usage. This is a problem that’s commonly found within computer vision that is able to utilize supervised machine learning to aggregate the training and testing data to increase accuracy.
 
@@ -20,3 +28,5 @@ Admittedly, I do not have results from trraining my CNN yet. This is due to my m
 - [Kaggle]https://www.kaggle.com/getting-started/44916
 - (3D Object Representations for Fine-Grained Categorization Jonathan Krause, Michael Stark, Jia Deng, Li Fei-Fei 4th IEEE Workshop on 3D Representation and Recognition, at ICCV 2013 (3dRR-13). Sydney, Australia. Dec. 8, 2013.)
 - [What is Copmuter Vision?]https://machinelearningmastery.com/what-is-computer-vision/ 
+- [Review: SENet, Winnerr of ILSVRC 2017 (Image Classification)]https://towardsdatascience.com/review-senet-squeeze-and-excitation-network-winner-of-ilsvrc-2017-image-classification-a887b98b2883
+- [SE-ResNeXt101-32x4d for PyTorch]https://catalog.ngc.nvidia.com/orgs/nvidia/resources/se_resnext_for_pytorch
