@@ -31,17 +31,13 @@ The architecture of the Neural Network follows the architecture of a pretrained 
 
 
 ## Results & Discussion
-Depicted below are tables that detail the training of the network. With the initial learning rate, weight decay, and epochs, the model was able to train to just under 70% accuracy. While this is a good benchmark to begin with, the model has potential for increases in accuracy when balancing learning rates, weight decays, and epochs.
+Depicted below (initial training left, final training right) are tables that detail the training of the network. With the initial learning rate (lr=2.75e-2), weight decay (wd=1e-5), and epochs (30), the model was able to train to just under 70% accuracy at 69.67%. While this is a good benchmark to begin with, the model has potential for increases in accuracy when balancing learning rates, weight decays, and epochs.
 
-![Table of initial training](/img/training_initial.png)
+![Table of initial training](/img/training_initial.png)       ![Table of final training](/img/training_final.png)
 
-*Training with initial learning rate and weight decay (lr=2.75e-2, wd=1e-5). Final accuracy evaluates to 69.67%.*
+*First model training. Accuracy: 69.67%.*                            *Final training. Final accuracy: 80.41%.*
 
-![Table of final training](/img/training_final.png)
-
-*Training with initial learning rate and weight decay (lr=3.22e-2, wd=1e-7). Final accuracy evaluates to 80.41%.*
-
-As depicted above, the accuracy of the model after tuning the learning rate and weight decay rises to just above 80% despite taking the same number of epochs (30) to train as the initial model. To increase the accuracy, to circumvent the increase in epochs for training that would result in longer training times, I decided to tune the learning rate and weight decay of the model. When adjusting the learning rate, I increased the learning rate slightly as a means to increase training accuracy at the risk of overfitting the data. On the other hand, adjusting weight decay was much trickier as the pretrained model employs the use of frozen layers, a technique in which the model will prevent a layer's weights from being modified at the benfit of decreasing computation time via reduced back propoagations.
+As depicted above (on the right), the accuracy of the model after tuning the learning rate and weight decay rises to just above 80% despite taking the same number of epochs (30) to train as the initial model. To increase the accuracy, to circumvent the increase in epochs for training that would result in longer training times, I decided to tune the learning rate and weight decay of the model. When adjusting the learning rate, I increased the learning rate slightly as a means to increase training accuracy at the risk of overfitting the data. On the other hand, adjusting weight decay was much trickier as the pretrained model employs the use of frozen layers, a technique in which the model will prevent a layer's weights from being modified at the benfit of decreasing computation time via reduced back propoagations.
 
 The use of a pretrained model provides significant advantages over architecting and training a model from scratch. The first main advantage lies in the optimization of training time due to ongoing development. Another significant advantage is the ability to readily take advantage of the processing power of graphical processing units (GPUs), specialized hardware designed for processing images and videos and is much more efficient than a traditional computer processor.
 
