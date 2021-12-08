@@ -26,6 +26,7 @@ The architecture of the Neural Network follows the architecture of a pretrained 
 [visualization of architecture]
 
 ## Results & Discussion
+Placeholder
 [Table of initial training]
 
 [Table of final training]
