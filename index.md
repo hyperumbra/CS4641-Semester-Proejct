@@ -31,11 +31,17 @@ The architecture of the Neural Network follows the architecture of a pretrained 
 
 
 ## Results & Discussion
-Depicted below are tables that
+Depicted below are tables that detail the training of the network. With the initial learning rate, weight decay, and epochs, the model was able to train to just under 70% accuracy. While this is a good benchmark to begin with, the model has potential for increases in accuracy when balancing learning rates, weight decays, and epochs. To increase the accuracy, to circumvent the increase in epochs for training that would result in longer training times, I decided to tune the learning rate and weight decay of the model. When adjusting the learning rate, I increased the learning rate slightly as a means to increase training accuracy at the risk of overfitting the data. On the other hand, adjusting weight decay was much trickier as the pretrained model employs the use of frozen layers, a technique in which the model will prevent a layer's weights from being modified at the benfit of decreasing computation time via reduced back propoagations.
 
 ![Table of initial training](/img/training_initial.png)
 
+*Training with initial learning rate and weight decay (lr=2.75e-2, wd=1e-5). Final accuracy evaluates to 69.67%.*
+
 ![Table of final training](/img/training_final.png)
+
+*Training with initial learning rate and weight decay (lr=3.22e-2, wd=1e-7). Final accuracy evaluates to 80.41%.*
+
+*Note:* The use of a pretrained model provides significant advantages over architecting and training a model from scratch. The first main advantage lies in the optimization of training time due to ongoing development. Another significant advantage is the ability to readily take advantage of the processing power of graphical processing units (GPUs), specialized hardware designed for processing images and videos and is much more efficient than a traditional computer processor.
 
 ## References
 - [Kaggle](https://www.kaggle.com/getting-started/44916)
