@@ -31,7 +31,7 @@ The architecture of the Neural Network follows the architecture of a pretrained 
 
 
 ## Results & Discussion
-Depicted below (initial training left, final training right) are tables that detail the training of the network. With the initial learning rate (lr=2.75e-2), weight decay (wd=1e-5), and epochs (30), the model was able to train to just under 70% accuracy at 69.67%. While this is a good benchmark to begin with, the model has potential for increases in accuracy when balancing learning rates, weight decays, and epochs.
+Depicted below are tables that detail the training of the network. With the initial learning rate (lr=2.75e-2), weight decay (wd=1e-5), and epochs (30), the model was able to train to just under 70% accuracy at 69.67%. While this is a good benchmark to begin with, the model has potential for increases in accuracy when balancing learning rates, weight decays, and epochs.
 
 ![Table of initial training](/img/training_initial.png)       ![Table of final training](/img/training_final.png)
 
