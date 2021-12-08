@@ -10,30 +10,37 @@ Classification of images that contains a vehicle parked at Stanford by make, mod
 ## Data Collection
 Data was collected from Kaggle, an online community of data scientists and machine learning practitioners. The dataset was already pre-processed into a training and test dataset, each containing just over 8,000 images for classification. After importing the dataset, the only task left at hand was to ensure proper image naming for training the model.
 
-[visualization of classes]
+To ensure proper image naming for training, the images were split into categories. Currently, there are 196 possible categorical classifications of vehicles for the images to be labelled. Depicted below are visualizations of the possible categories.
 
-[visualization of class distribution]
+![visualization of classes](/img/class_visualizations.png)
 
-[Another cool visualization]
+*Visualization of a subset of all possible labels and example classified images.*
 
-[cool 3d visualization]
+![visualization of class distribution](/img/class_distribution.png)
+
+*Distribution of classified images.*
 
 ## Methods
 I am currently utilizing a convolutional neural network (CNN), a supervised methodology of machine learning, to do image classification of vehicle make, model, and year. Instead of attempting to utilize several different models for classification, such as a decision tree or random forest for image classification, I have decided to focus on working with a CNN due to its powerful classification abilities and wide application of usage. This is a problem that’s commonly found within computer vision that is able to utilize supervised machine learning to aggregate the training and testing data to increase accuracy.
 
-The architecture of the Neural Network follows the architecture of a pretrained ResNeXt101-32x4df with the addition of the Squeeze-and-Excitation module (also known as SE-ResNeXt101-32x4d). The primary advantages to utilizing this neural network architecture are two-fold: increased accuracy while decreasing training time. On the first layer, the model will pass an input through a pooling layer, a fully connected layer, an ReLU activation, a fully connected layer, and a Sigmoid activation before scaling to be output. However, the model may "freeze" layers past the first one. Freezing is the phenomonon of preventing a layer's weights from being modified to drastically reduce computation due to significantly less back propogations. We do this since we're adding more generral objects to this pretrained model for the network to realize.
+The architecture of the Neural Network follows the architecture of a pretrained ResNeXt101-32x4d with the addition of the Squeeze-and-Excitation module (also known as SE-ResNeXt101-32x4d). The primary advantages to utilizing this neural network architecture are two-fold: increased accuracy while decreasing training time. On the first layer, the model will pass an input through a pooling layer, a fully connected layer, an ReLU activation, a fully connected layer, and a Sigmoid activation before scaling to be output. However, the model may "freeze" layers past the first one. Freezing is the phenomonon of preventing a layer's weights from being modified to drastically reduce computation due to significantly less back propogations. We do this since we're adding more generral objects to this pretrained model for the network to realize.
 
-[visualization of architecture]
+![visualization of architecture](/img/se-resnet_architecture.png)
+
+*Visualization of ResNet compared to SE-ResNeXt101-32xd. Image from Squeeze-and-Excitation Networks as reference below.*
+
 
 ## Results & Discussion
-Placeholder
-[Table of initial training]
+Depicted below are tables that
 
-[Table of final training]
+![Table of initial training](/img/training_initial.png)
+
+![Table of final training](/img/training_final.png)
 
 ## References
-- [Kaggle]https://www.kaggle.com/getting-started/44916
-- (3D Object Representations for Fine-Grained Categorization Jonathan Krause, Michael Stark, Jia Deng, Li Fei-Fei 4th IEEE Workshop on 3D Representation and Recognition, at ICCV 2013 (3dRR-13). Sydney, Australia. Dec. 8, 2013.)
-- [What is Copmuter Vision?]https://machinelearningmastery.com/what-is-computer-vision/ 
-- [Review: SENet, Winnerr of ILSVRC 2017 (Image Classification)]https://towardsdatascience.com/review-senet-squeeze-and-excitation-network-winner-of-ilsvrc-2017-image-classification-a887b98b2883
-- [SE-ResNeXt101-32x4d for PyTorch]https://catalog.ngc.nvidia.com/orgs/nvidia/resources/se_resnext_for_pytorch
+- [Kaggle](https://www.kaggle.com/getting-started/44916)
+- 3D Object Representations for Fine-Grained Categorization Jonathan Krause, Michael Stark, Jia Deng, Li Fei-Fei 4th IEEE Workshop on 3D Representation and Recognition, at ICCV 2013 (3dRR-13). Sydney, Australia. Dec. 8, 2013.
+- [What is Copmuter Vision?](https://machinelearningmastery.com/what-is-computer-vision/)
+- [Review: SENet, Winnerr of ILSVRC 2017 (Image Classification)](https://towardsdatascience.com/review-senet-squeeze-and-excitation-network-winner-of-ilsvrc-2017-image-classification-a887b98b2883)
+- [SE-ResNeXt101-32x4d for PyTorch](https://catalog.ngc.nvidia.com/orgs/nvidia/resources/se_resnext_for_pytorch)
+- [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf)
