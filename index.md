@@ -1,4 +1,4 @@
-# CS 4641 Semester Project
+# CS 4641 Semester Project: Standford Car Classifier
 _Created by Joshua Donegal_
 
 ## Introduction/Background
